@@ -88,9 +88,7 @@ export function AboutSection() {
                 <p className="text-base leading-[1.7] text-[#a1a1aa]">
                   I am a passionate Full Stack Developer and Cloud Engineer with extensive
                   experience supporting applications and scalable cloud
-                  infrastructure. My expertise spans the entire development lifecycle — from
-                  designing responsive front-end interfaces with React and TypeScript to
-                  architecting microservices and CI/CD pipelines on AWS.
+                  infrastructure.
                 </p>
                 <p className="text-base leading-[1.7] text-[#a1a1aa]">
                   With a strong foundation in both development and operations, I bridge the gap
