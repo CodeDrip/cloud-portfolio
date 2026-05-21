@@ -4,6 +4,7 @@ import { Download } from "lucide-react";
 // import { SectionReveal } from "@/components/ui/SectionReveal";
 import { SectionReveal } from "@/components/ui/SectionReveal";
 
+
 function WaveUnderline() {
   return (
     <svg width="120" height="12" viewBox="0 0 120 12" className="mt-2">
@@ -99,10 +100,10 @@ export function AboutSection() {
               </div>
 
               <div className="mt-8">
-                <button className="cta-button">
+                  <a className="cta-button" href="/1_Dhaesha_Myers_Resume.pdf" download>
                   <Download size={16} />
                   View My Resume
-                </button>
+                </a>
               </div>
             </div>
 
