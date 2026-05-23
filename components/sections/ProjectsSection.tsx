@@ -12,28 +12,32 @@ gsap.registerPlugin(ScrollTrigger);
 
 const PROJECTS = [
   {
-    title: "Atchoukpa Digital Experts",
-    description: "A digital agency landing page featuring 3D mockups, service showcases, and contact integration. Built with a focus on performance and visual impact.",
-    tech: ["React", "Three.js", "Tailwind"],
+    title: "S3 Cloud Deployment",
+    description: "Deloyed my 2022  portfolio to S3",
+    tech: ["React", "AWS S3", "IAM"],
     image: "/assets/project-thumb-1.jpg",
+    link: "https://cloud-22-portfolio-deployment.s3.us-east-1.amazonaws.com/index.html",
   },
   {
     title: "AI Trading Bot",
     description: "An automated cryptocurrency trading platform with real-time market analysis, custom strategy builder, and portfolio tracking dashboard.",
     tech: ["Python", "FastAPI", "WebSockets", "Docker"],
     image: "/assets/project-thumb-2.jpg",
+    link: "",
   },
   {
     title: "Incident Tracking System",
     description: "A full-featured incident management system for enterprise IT operations with role-based access, SLA monitoring, and automated escalation workflows.",
     tech: ["Next.js", "PostgreSQL", "AWS Lambda"],
     image: "/assets/project-thumb-3.jpg",
+    link: "",
   },
   {
     title: "Interactive Resume",
     description: "A personal portfolio and resume website with dynamic content loading, print-friendly layout, and contact form integration.",
     tech: ["React", "Framer Motion", "Vercel"],
     image: "/assets/project-thumb-4.jpg",
+    link: "",
   },
 ];
 
@@ -69,7 +73,12 @@ function ProjectCard({ project }: { project: (typeof PROJECTS)[0] }) {
             ))}
           </div>
           <span className="flex items-center gap-1 text-sm text-[#ec4899] hover:underline cursor-pointer">
-            <ExternalLink size={14} /> View Project
+            <ExternalLink size={14} />
+              <a href={project.link}
+              target="_blank" 
+              rel="noopener noreferrer">
+                 View Project
+              </a>
           </span>
         </div>
       </div>

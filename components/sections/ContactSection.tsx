@@ -3,6 +3,11 @@
 import { useState } from "react";
 import { GlassCard } from "@/components/ui/GlassCard";
 import { SectionReveal } from "@/components/ui/SectionReveal";
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.RESENDAPIKEY);
+
+
 
 function LinkedInIcon({ size = 20 }: { size?: number }) {
   return (
@@ -34,6 +39,9 @@ const SOCIAL_LINKS = [
   // { icon: XIcon, href: "https://twitter.com", label: "X" },
 ];
 
+
+// FORM ACTION 
+
 export function ContactSection() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
@@ -50,6 +58,7 @@ export function ContactSection() {
     <section id="contact" className="relative py-[clamp(80px,10vh,120px)]">
       <div className="max-w-[1200px] mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
+          
           <SectionReveal direction="left" className="w-full lg:w-[60%]">
             <GlassCard padding="lg">
               <h3 className="text-lg font-normal uppercase tracking-wide text-white mb-8">Send a Message</h3>
@@ -81,7 +90,10 @@ export function ContactSection() {
                 Let&apos;s Connect
               </h2>
               <p className="text-base leading-[1.7] text-[#a1a1aa] mb-8">
-                I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                I&apos;m always open to discussing new projects, creative ideas, or 
+                opportunities to be part of your vision. 
+                I&apos;m also testing the CI/CD pipeline to AWS S3. 
+                It works! Im Happy :-D !
               </p>
               <div className="flex gap-4">
                 {SOCIAL_LINKS.map(({ icon: Icon, href, label }) => (
@@ -92,6 +104,7 @@ export function ContactSection() {
               </div>
             </div>
           </SectionReveal>
+
         </div>
       </div>
     </section>

@@ -1,3 +1,4 @@
+// import { EmailTemplate } from "@/components/email-templte";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { ContactSection } from "@/components/sections/ContactSection";
 import { HeroSection } from "@/components/sections/HeroSection";
@@ -16,7 +17,8 @@ export default function Home() {
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
-        <ContactSection />
+        {/* <ContactSection /> */}
+        {/* <EmailTemplate firstName="test"/> */}
       </main>
     </div>
   );
