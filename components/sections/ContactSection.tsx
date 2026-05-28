@@ -90,10 +90,7 @@ export function ContactSection() {
                 Let&apos;s Connect
               </h2>
               <p className="text-base leading-[1.7] text-[#a1a1aa] mb-8">
-                I&apos;m always open to discussing new projects, creative ideas, or 
-                opportunities to be part of your vision. 
-                I&apos;m also testing the CI/CD pipeline to AWS S3. 
-                It works! Im Happy :-D !
+                I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
               </p>
               <div className="flex gap-4">
                 {SOCIAL_LINKS.map(({ icon: Icon, href, label }) => (

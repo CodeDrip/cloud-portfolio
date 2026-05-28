@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 const PROJECTS = [
   {
     title: "S3 Cloud Deployment",
-    description: "Deloyed my 2022  portfolio to S3",
+    description: "Deloyed my 2022  portfolio to S3 utilizing CI/CD pipeline with Github Actions, Gitlab, and Jenkins server on EC2 ",
     tech: ["React", "AWS S3", "IAM"],
     image: "/assets/project-thumb-1.jpg",
     link: "https://cloud-22-portfolio-deployment.s3.us-east-1.amazonaws.com/index.html",
